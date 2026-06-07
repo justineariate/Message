@@ -244,6 +244,21 @@ body {
   transform: scale(1.1);
 }
 
+/* I add this on blocking the message */
+.message-box.opened .message-front {
+  opacity: 0;
+  pointer-events: none;
+}
+.message-back {
+  z-index: 2;
+}
+
+.message-front {
+  z-index: 3;
+}
+.message-box.opened .message-back {
+  z-index: 5;
+}
 .memory-caption {
   position: absolute;
   bottom: 0;
@@ -387,25 +402,8 @@ body {
     padding: 15px;
   }
 
-  .container {
-    margin: auto;
-  }
-
-  .header {
-    margin-bottom: 30px;
-  }
-
   .header h1 {
     font-size: 1.5rem;
-    margin-bottom: 8px;
-  }
-
-  .subtitle {
-    font-size: 0.85rem;
-  }
-
-  .message-box-wrapper {
-    margin-bottom: 30px;
   }
 
   .message-box {
@@ -419,61 +417,21 @@ body {
 
   .front-text {
     font-size: 1.2rem;
-    margin-bottom: 15px;
   }
 
   .open-btn {
-    padding: 8px 20px;
+    padding: 8px 18px;
     font-size: 0.85rem;
   }
 
-  .message-content h2 {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+  /* IMPORTANT FIX FOR MOBILE BUG */
+  .message-box.opened .message-front {
+    display: none;
   }
 
-  .message-content p {
-    font-size: 0.8rem;
-    margin-bottom: 10px;
-    line-height: 1.6;
-  }
-
-  .section-title {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-  }
-
-  .memories-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .memory-card {
-    height: 200px;
-  }
-
-  .love-card {
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .love-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-
-  .reasons-list {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .reasons-list li {
-    font-size: 0.8rem;
-    padding: 12px;
-  }
-
-  .footer {
-    padding: 20px 10px;
-    font-size: 0.9rem;
+  .message-box.opened .message-back {
+    transform: none;
+    position: relative;
+    height: 100%;
   }
 }
