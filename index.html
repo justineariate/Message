@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Message For You 💌</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1>💌 A Message for you</h1>
+        <!-- <p class="subtitle">Click to open my heart</p> -->
+      </header>
+
+      <!-- Message Box (Like a Paper) -->
+      <div class="message-box-wrapper">
+        <div class="message-box" id="messageBox">
+          <!-- Front of paper -->
+          <div class="message-front">
+            <div class="paper-pattern"></div>
+            <p class="front-text">Kapag inopen mo, magugutla ka</p>
+            <button class="open-btn" id="openBtn" onclick="toggleMessage()">
+              📖 Open Message
+            </button>
+          </div>
+
+          <!-- Back of paper (Message) -->
+          <div class="message-back" id="messageBack">
+            <button class="close-btn" onclick="toggleMessage()">✕</button>
+            <div class="message-content">
+              <h2>Something na hinanakit ko sayo😂</h2>
+              <p>
+                Hello belly… I’ve been holding this in for a while, and I think
+                I finally just want to say it straight, no filters, no pride. I
+                just miss you. Not in a dramatic way, but in that quiet “I
+                notice your absence in random parts of my day” kind of way. Like
+                when something funny happens and I instinctively think I want to
+                tell you, then I remember I can’t. I won’t pretend everything
+                was perfect between us, because it wasn’t. I know we had
+                mistakes, and I know there were moments na di natin maintindihan
+                ang isa't isa. Honestly, losing you made me realize a lot of
+                things I was blind to before. (pero limot na rin yung ibang
+                nangyari kung bakit tayo nawala sa isa't isa) Especially how
+                valuable your presence was in my life. You’re one of those
+                people who doesn’t just come and go normally. You stay in
+                someone’s thoughts even when they try to move forward. And yeah,
+                I tried to act like I was fine at some point, but I’d be lying
+                if I said I didn’t still think about you more often than I
+                should. I’m not here to pressure you or make you feel like you
+                owe me anything. I respect your space and whatever you’ve
+                decided for yourself. I just want to be real and say I still
+                care about you, and not in a “temporary feelings” kind of way,
+                but in a way that stayed even after everything changed. If
+                there’s even a small chance you ever felt like start again, I
+                wouldn’t rush anything. I wouldn’t try to force the past back.
+                I’d just want to rebuild things properly this time, slow and
+                honest. And I know kagagaling mo lang ulit sa talking stage pero
+                nandito lang ako if you’ve completely moved on. I won’t disturb
+                your peace. I just needed you to know that you mattered to me
+                more than I probably ever showed. Either way, thank you for
+                existing in my life and teaching me things I didn’t understand
+                before.😊
+              </p>
+              <p>
+                I know na takot ka ulit pumasok sa rs kasi sabi mo nga na
+                binigay mo lahat-lahat, kumbaga ubos ka kahit wala ng matira
+                sayo. Pero sa ngayon hayaan mo lang ako mahalin ka ulit pero
+                alam ko di nmn ganon kadali yon pero try mo ulit, malay mo
+                magwork ulit diba for 3 or almost 4 years tayo nawala and I know
+                we're friends sa ngayon. Still longing for you, God knows how
+                much I want "us" to work again.
+              </p>
+              <p>
+                Eto nakita ko sa post mo "WHEN I LOOK INTO YOUR EYES IT’S LIKE
+                WATCHING THE NIGHT SKY OR A BEAUTIFUL SUNRISE WELL. THERE’S OS
+                MUCH THEY HOLD AND JUST LIKE THEM OLD STARS I SEE THAT YOU’VE
+                COME SO FAR "
+              </p>
+              <p>
+                Eto pa, ang tagal ko rin nagantay sayo na maging okay ulit tayo
+                madalas chinachat kita kaso ang manhid mo na parang laki ng
+                galit mo sa'kin non (sana gets mo) saka may bf ka pa at
+                manliligaw non and understand nmn. Kaya nung sinabe mo na wala
+                na kayo lalo nung sinasabe mo na ldr na na-busted mo sabe ko
+                "parang eto na yung chance ko ulit na magsimula" kaya di ko na
+                sasayangin tong oppotunity na kahit takot ka na ulit pumasok sa
+                love life dahil may academics diba, so ayon.
+              </p>
+              <p>
+                Anyway, I just wanna ask your permission again kung pwede
+                manligaw ulit? I'm willing to court you again if you want to😉
+              </p>
+              <p class="signature">Forever yours ✨</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Memories Gallery -->
+      <section class="memories-section">
+        <h2 class="section-title">📸 Si Panget</h2>
+        <div class="memories-grid">
+          <!-- Memory 1 -->
+          <div class="memory-card">
+            <img src="images/f1.jpg" alt="Memory 1" />
+            <!-- <div class="memory-caption">When we first met ✨</div> -->
+          </div>
+
+          <!-- Memory 2 -->
+          <div class="memory-card">
+            <img src="images/f3.jpg" alt="Memory 2" />
+            <!-- <div class="memory-caption">Our first adventure 🌟</div> -->
+          </div>
+
+          <!-- Memory 3 -->
+          <div class="memory-card">
+            <img src="images/f5.jpg" alt="Memory 3" />
+            <!-- <div class="memory-caption">Special moments 💫</div> -->
+          </div>
+
+          <!-- Memory 4 -->
+          <div class="memory-card">
+            <img src="images/f7.jpg" alt="Memory 4" />
+            <!-- <div class="memory-caption">Laughing together 😄</div> -->
+          </div>
+
+          <!-- Memory 5 -->
+          <div class="memory-card">
+            <img src="images/t5.jpg" alt="Memory 5" />
+            <!-- <div class="memory-caption">You and me 💕</div> -->
+          </div>
+
+          <!-- Memory 6 -->
+          <div class="memory-card">
+            <img src="images/f9.jpg" alt="Memory 6" />
+            <!-- <div class="memory-caption">Forever moments 🌹</div> -->
+          </div>
+          <div class="memory-card">
+            <img src="images/t6.jpg" alt="Memory 6" />
+            <!-- <div class="memory-caption">Forever moments 🌹</div> -->
+          </div>
+          <div class="memory-card">
+            <img src="images/t7.jpg" alt="Memory 6" />
+            <!-- <div class="memory-caption">Forever moments 🌹</div> -->
+          </div>
+          <div class="memory-card">
+            <img src="images/t8.jpg" alt="Memory 6" />
+            <!-- <div class="memory-caption">Forever moments 🌹</div> -->
+          </div>
+          <div class="memory-card">
+            <img src="images/t9.jpg" alt="Memory 6" />
+            <!-- <div class="memory-caption">Forever moments 🌹</div> -->
+          </div>
+          <div class="memory-card">
+            <img src="images/d1.jpg" alt="Memory 6" />
+            <!-- <div class="memory-caption">Forever moments 🌹</div> -->
+          </div>
+          <div class="memory-card">
+            <img src="images/d2.jpg" alt="Memory 6" />
+            <!-- <div class="memory-caption">Forever moments 🌹</div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Love Declaration -->
+      <!-- <section class="love-section">
+        <div class="love-card">
+          <h3>❤️ Why You Mean Everything To Me ❤️</h3>
+          <ul class="reasons-list">
+            <li>💎 Your strength & beauty inspire me every day</li>
+            <li>🌟 Your kindness touches everyone around you</li>
+            <li>💕 Your laugh is my favorite sound</li>
+            <li>🦋 You make me want to be a better person</li>
+            <li>👑 You are my greatest blessing</li>
+            <li>✨ With you, everything feels right</li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Made with love, just for you 💌</p>
+        <p>Build by Justine para kay bel</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
