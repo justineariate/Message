@@ -408,6 +408,7 @@ body {
 
   .message-box {
     height: 350px;
+    width: 100%;
   }
 
   .message-front,
@@ -424,14 +425,11 @@ body {
     font-size: 0.85rem;
   }
 
-  /* IMPORTANT FIX FOR MOBILE BUG */
-  .message-box.opened .message-front {
-    display: none;
+  .message-content p {
+    font-size: 0.85rem;
   }
 
-  .message-box.opened .message-back {
-    transform: none;
-    position: relative;
-    height: 100%;
+  .memory-card {
+    height: 160px;
   }
 }
